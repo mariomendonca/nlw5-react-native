@@ -2,20 +2,20 @@ import React from 'react';
 
 
 import {  
-  Button,
+  Container,
   ButtonText
-} from '../styles/Welcome';
+} from '../styles/Button';
 
-export function MainButton({ title, ...rest }) {
+export function Button({ title, ...rest }) {
   return(
-    <Button 
+    <Container 
       activeOpacity={0.7}
       {...rest}  
     >
       <ButtonText>
         {title}
       </ButtonText>
-    </Button>
+    </Container>
   )
 }
 

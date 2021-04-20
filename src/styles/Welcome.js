@@ -1,24 +1,35 @@
 import styled from 'styled-components/native';
 import colors from '../styles/Colors'
+import fonts from '../styles/Fonts'
 
 export const Container = styled.SafeAreaView`
   flex: 1;
+`
+
+export const Wrapper = styled.View`
+  flex: 1;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  padding: 0 20px;
+
 `
 
 export const Title = styled.Text`
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   text-align: center;
   color: ${colors.heading};
   margin-top: 38px;
+  font-family: ${fonts.heading};
+  line-height: 34px;
 `
 
 export const Subtitle = styled.Text`
   text-align: center;
   font-size: 16px;
-  padding: 0 30px;
+  padding: 0 20px;
+  font-family: ${fonts.text};
+  color: ${colors.heading}
 `
 
 export const Img = styled.Image`
@@ -34,8 +45,4 @@ export const Button = styled.TouchableOpacity`
   margin-bottom: 10px;
   height: 56px;
   width: 56px;
-`
-
-export const ButtonText = styled.Text`
-  color: #fff;
 `
