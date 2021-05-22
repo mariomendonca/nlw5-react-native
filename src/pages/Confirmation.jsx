@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/core'
 
 import {
   Container,
@@ -14,6 +15,12 @@ import {
 import { Button } from '../components/Button'
 
 export function Confirmation() {
+  const { navigate } = useNavigation()
+
+  function HandleNavigate() {
+    navigate('PlantSelect')
+  }
+
   return (
     <Container>
       <Content>
@@ -26,8 +33,7 @@ export function Confirmation() {
             Agora vamos começar a cuidar das suas plantinhas com muito cuidados
           </Subtitle>
           <Footer>
-            <Button title='Continuar'/>
-
+            <Button title='Continuar' onPress={HandleNavigate}/>
           </Footer>
         </Form>
       </Content>

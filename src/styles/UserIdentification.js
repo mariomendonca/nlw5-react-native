@@ -36,7 +36,7 @@ export const Input = styled.TextInput`
   margin-top: 50px;
   text-align: center;
   font-size: 18px;
-  font-family: ${Fonts.text};
+  font-family: ${Fonts.heading};
 `
 
 export const Title = styled.Text`
