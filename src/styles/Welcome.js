@@ -29,7 +29,7 @@ export const Subtitle = styled.Text`
   font-size: 16px;
   padding: 0 20px;
   font-family: ${fonts.text};
-  color: ${colors.heading}
+  color: ${colors.heading};
 `
 
 export const Img = styled.Image`

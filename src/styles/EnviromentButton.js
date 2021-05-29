@@ -4,16 +4,17 @@ import Colors from './Colors'
 import Fonts from './Fonts'
 
 export const Container = styled(RectButton)`
-  background: ${({ back }) => back ? Colors.shape : Colors.green_light};
+  background: ${({ back }) => back ? Colors.green_light : Colors.shape};
   height: 40px;
   width: 76px;
   border-radius: 12px;
   justify-content: center;
   align-items: center;
   margin-right: 5px;
+  margin-left: 5px;
 `
 
 export const ButtonText = styled.Text`
-  color: ${({ color }) => color ? Colors.heading : Colors.green_dark};
-  font-family: ${({ font }) =>font ? Fonts.text : Fonts.heading};
+  color: ${({ color }) => color ? Colors.green_dark : Colors.heading};
+  font-family: ${({ font }) =>font ? Fonts.heading : Fonts.text};
 `
